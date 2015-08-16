@@ -1,14 +1,23 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="feedbackModulApp">
 <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="css/app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="resources/js/controllers.js"></script>
 </head>
-<body>
 
-<p>Nothing here {{'yet' + '!'}}</p>
+<body ng-controller="FeedbackListCtrl">
+
+    <ul>
+        <li ng-repeat="feedback in feedbacks.feedbacks">
+            <span>{{feedback.text}}</span>
+            <p>{{feedback.owner}}</p>
+            <p>{{feedback.positive}}</p>
+            <p>{{feedback.negative}}</p>
+        </li>
+    </ul>
 
 </body>
 </html>

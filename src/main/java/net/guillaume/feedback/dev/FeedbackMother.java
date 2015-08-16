@@ -18,10 +18,9 @@ public class FeedbackMother {
         NORMAL.add(new FeedBack("mouais surement", "pipo"));
         NORMAL.add(new FeedBack("vraiment", "pipo"));
 
-        BASIC = new FeedBack("this is wonderful", "guillaume");
+        BASIC = new FeedBack("Up and running", "pedro");
         BASIC.plus(3, "guillaume");
         BASIC.plus(3, "pedro");
-        NORMAL.minus(1, "peniblo");
 
     }
 
